@@ -8,6 +8,8 @@ var arr = [10,20,30,40,50,60]
 
 //Code Here
 
+var firstItem = arr[0]
+console.log(firstItem)
 
 ////////// PROBLEM 2 //////////
 /*
@@ -15,6 +17,10 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+
+var lastItemRemoved = arr.pop()
+console.log(lastItemRemoved)
+console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -43,13 +49,19 @@ let evensArr = []
 
 //Code Here
 
-
+for(let i = 0; i < nums.length; i++){
+  if(nums[i] % 2 === 0){
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr)
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
 var score = 74
 // Do not edit the code above.
+
 
 /*
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
@@ -152,3 +164,13 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+for(let i = 1; i <= 100; i++){
+  if(i % 3 === 0 && i % 5 === 0){
+    console.log(`DevMountain`)
+  } else if(i % 3 === 0){
+    console.log(`Dev`)
+  } else if(i % 5 === 0){
+    console.log(`Mountain`)
+  } else {console.log(i)}
+}
